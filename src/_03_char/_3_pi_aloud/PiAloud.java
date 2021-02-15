@@ -11,17 +11,14 @@ public class PiAloud {
 	 * *****************/
 	boolean canPlaySounds = false;
 	
-	
 	// 1. Make a main method and make sure your program can run
 
 	public static void main(String[] args) {
-	
+		
 	// 2. Make a String variable to hold 20 digits of Pi. You could use http://www.piday.org/million/ to get this.
 
 		String piDigits = "3.1415926535897932384";
-		
-	// 3. Print out 3 digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
-	// Check the console shows 3.1
+	
 
 		for (int i = 0; i < piDigits.length(); i++) {
 			
@@ -31,9 +28,12 @@ public class PiAloud {
 		
 		if (userInput == piDigits.charAt(i)) {
 			
-		System.out.println();
+		System.out.println("Correct.");
 			
 		}
+		
+		else System.out.println("Incorrect.");
+		
 		}
 		
 	// 4. Print ALL the digits of the Pi String, putting each digit on a new line  (hint: use a loop)
